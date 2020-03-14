@@ -1,14 +1,28 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-archives (quote (("melpa" . "http://melpa.milkbox.net/packages/"))))
+ '(package-selected-packages
+   (quote
+    (projectile ggtags yasnippet yasnippet-snippets use-package magit))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
-;; need proxy ?
+;; FIRST, basic keys binding 
+(load-file "~/.emacs.d/init-keys.el")
+
+;; need proxy for package installation
 ;(load-file "init-proxy.el");
-
-;; add melpa packages:
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-
-;; set use-package
-(load-file "~/.emacs.d/init-use-package.el")
 
 ;; install & configure packages
 (load-file "~/.emacs.d/init-packages.el")
+
+;; setup for development
+(load-file "~/.emacs.d/init-dev.el")
 
