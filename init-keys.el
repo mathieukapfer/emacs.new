@@ -31,3 +31,4 @@
   (dired default-directory)
   ;;(replace-in-string (buffer-file-name) "/[^/]+$" "/."))
 )
+
