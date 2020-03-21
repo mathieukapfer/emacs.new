@@ -4,7 +4,7 @@
   (find-file "~/.emacs.d/init.el")
   ;;(switch-to-buffer "init.el" )
   )
-(global-set-key (kbd "C-<escape>") 'switch-to-buffer-emacs)
+(global-set-key (kbd "C-<f1>") 'switch-to-buffer-emacs)
 
 ;; window split helper in french keyboard
 (global-set-key (kbd "M-œ")  'delete-window)
