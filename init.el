@@ -7,9 +7,7 @@
  '(package-archives (quote (("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(package-selected-packages
    (quote
-    (projectile ggtags yasnippet yasnippet-snippets use-package magit))))
-
-
+    (auto-complete-clang-async auto-complete-clang auto-complete flycheck-cstyle flycheck projectile ggtags yasnippet yasnippet-snippets use-package magit))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -18,7 +16,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; FIRST, basic keys binding 
+;; First, basic keys binding - to easy debug of init if needed
 (load-file "~/.emacs.d/init-keys.el")
 
 ;; need proxy for package installation
@@ -31,4 +29,4 @@
 (load-file "~/.emacs.d/init-customize.el")
 
 ;; setup for development
-(load-file "~/.emacs.d/init-dev.el")
+(load-file "~/.emacs.d/init-ide.el")
