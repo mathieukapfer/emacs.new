@@ -1,6 +1,8 @@
 ;; force c++ mode for *.h files
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
+;; switch /h / .cpp
+(load-file "~/.emacs.d/my-cpp-facilites.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; style and code indentation
