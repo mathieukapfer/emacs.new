@@ -14,6 +14,7 @@
 
 ;; windows navigation
 (global-set-key (kbd "C-<tab>") 'other-window)
+(global-set-key (kbd "C-œ") 'other-window)
 
 ;; buffer navigation
 (global-set-key (kbd "M-<left>") 'previous-buffer) ; ALT+ flèche gauche
