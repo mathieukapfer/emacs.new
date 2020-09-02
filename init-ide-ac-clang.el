@@ -18,6 +18,8 @@
 "
                 )))
 
+(setq cmake-ide-flags-c++ (append cmake-ide-flags-c++ (list "-D_X86_")))
+
 ;; https://github.com/Golevka/emacs-clang-complete-async
 
 (require 'auto-complete-clang-async)

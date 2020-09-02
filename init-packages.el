@@ -4,9 +4,20 @@
 ;;  This is to easily duplicate the cuurent configuration on a new installation
 
 (require 'package)
+
+;; update signature
+(load-file "~/.emacs.d/gnu-elpa-keyring-update-2019.3/gnu-elpa-keyring-update.el")
+
 ;; add melpa stable
+;;(add-to-list 'package-archives
+;;             '("MELPA Stable" . "https://stable.melpa.org/packages/") t)
+
 (add-to-list 'package-archives
-             '("MELPA Stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa" . "http://melpa.org/packages/") t)
+
+;;(add-to-list 'package-archives
+;;             '("gnu" . "http://elpa.gnu.org/packages/") t)
+
 
 (package-initialize)
 

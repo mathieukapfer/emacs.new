@@ -9,19 +9,16 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(projectile-git-command "git ls-files -zc --exclude-standard  --recurse-submodules")
+ '(c-basic-offset 2)
+ '(clang-format-style "file")
  '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^\\.[^.]")
+ '(fill-column 80)
  '(indent-tabs-mode nil)
- '(jdee-jdk-registry
-   (quote
-    (("10.0" . "/usr/lib/jvm/java-1.11.0-openjdk-amd64/"))))
- '(jdee-server-dir "/home/kapfer/Code-git/jdee-server/target")
- '(package-archives (quote (("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(package-selected-packages
    (quote
-    (cmake-ide cmake-mode jdee elpy auto-complete auto-complete-clang-async   flycheck-cstyle flycheck projectile ggtags yasnippet yasnippet-snippets use-package magit))) ;; auto-complete-clang
- '(c-basic-offset 2)
- '(fill-column 80)
+    (cmake-ide cmake-mode elpy auto-complete auto-complete-clang-async flycheck-cstyle flycheck projectile ggtags yasnippet yasnippet-snippets use-package magit)))
+ '(projectile-git-command "git ls-files -zc --exclude-standard  --recurse-submodules")
+ '(require-final-newline (quote ask))
  '(tab-width 2))
 
 (custom-set-faces
@@ -35,7 +32,7 @@
 (load-file "~/.emacs.d/init-keys.el")
 
 ;; need proxy for package installation
-;(load-file "init-proxy.el");
+(load-file "~/.emacs.d/init-proxy.el");
 
 ;; install & configure packages
 (load-file "~/.emacs.d/init-packages.el")
@@ -45,3 +42,8 @@
 
 ;; setup for development
 (load-file "~/.emacs.d/init-ide.el")
+(put 'erase-buffer 'disabled nil)
+
+;; clang-format
+(load-file "~/.emacs.d/clang-format.el")
+(global-set-key [C-M-tab] 'clang-format-region)
