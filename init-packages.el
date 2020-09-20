@@ -6,7 +6,7 @@
 (require 'package)
 
 ;; update signature
-(load-file "~/.emacs.d/gnu-elpa-keyring-update-2019.3/gnu-elpa-keyring-update.el")
+;;(load-file "~/.emacs.d/gnu-elpa-keyring-update-2019.3/gnu-elpa-keyring-update.el")
 
 ;; add melpa stable
 ;;(add-to-list 'package-archives

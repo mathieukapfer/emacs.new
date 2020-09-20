@@ -32,7 +32,7 @@
 (load-file "~/.emacs.d/init-keys.el")
 
 ;; need proxy for package installation
-(load-file "~/.emacs.d/init-proxy.el");
+;; (load-file "~/.emacs.d/init-proxy.el");
 
 ;; install & configure packages
 (load-file "~/.emacs.d/init-packages.el")
