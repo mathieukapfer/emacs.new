@@ -63,3 +63,9 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; opencl
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'opencl-mode)
+;;(setq auto-mode-alist (cons '("\.cl$" . c-mode) auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.cl\\'" . opencl-mode))

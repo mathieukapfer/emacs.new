@@ -16,7 +16,7 @@
  '(indent-tabs-mode nil)
  '(package-selected-packages
    (quote
-    (cmake-ide cmake-mode elpy auto-complete auto-complete-clang-async flycheck-cstyle flycheck projectile ggtags yasnippet yasnippet-snippets use-package magit)))
+    (opencl-mode cmake-ide cmake-mode elpy auto-complete auto-complete-clang-async flycheck-cstyle flycheck projectile ggtags yasnippet yasnippet-snippets use-package magit))) ;; ox-asciidoc
  '(projectile-git-command "git ls-files -zc --exclude-standard  --recurse-submodules")
  '(require-final-newline (quote ask))
  '(tab-width 2))
