@@ -1,5 +1,7 @@
 ;; http://github.com/atilaneves/cmake-ide
-(cmake-ide-setup)
+
+;;;;; disable this mode : too invasive
+;;;;;(cmake-ide-setup)
 
 (setq cmake-ide-flags-c++ ;;ac-clang-flags
       (mapcar (lambda (item)(concat "-I" item))
@@ -40,5 +42,3 @@
   (global-auto-complete-mode t))
 
 (my-ac-config)
-
-
