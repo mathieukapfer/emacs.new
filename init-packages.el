@@ -1,7 +1,7 @@
 ;;; init-packages.el -- check & install user packages if needed
 ;;
 ;;; Commentary:
-;;  This is to easily duplicate the cuurent configuration on a new installation
+;;  This is to easily duplicate the current configuration on a new installation
 
 (require 'package)
 
@@ -27,9 +27,6 @@
     nil
   ;; refresh index
   (package-refresh-contents)
-  ;; try again the installation 
+  ;; try again the installation
   (package-install-selected-packages)
   )
-  
-    
-
