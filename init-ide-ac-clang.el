@@ -38,7 +38,8 @@
   (add-hook 'c++-mode-common-hook 'ac-cc-mode-setup)
   (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
   (add-hook 'auto-complete-mode-hook 'ac-common-setup)
-  (add-hook 'after-save-hook 'ac-clang-update-cmdlineargs) ;; make cflags change to take effect
+  ;; code below commented : produce error 'init.el has no process' on package installation !
+  ;; (add-hook 'after-save-hook 'ac-clang-update-cmdlineargs) ;; make cflags change to take effect
   (global-auto-complete-mode t))
 
 (my-ac-config)
