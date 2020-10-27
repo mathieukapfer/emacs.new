@@ -11,12 +11,13 @@
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 2)
  '(clang-format-style "file")
- '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.\\.$\\|^\\.[^.]")
+ '(dired-listing-switches "-alh")
+ '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.[^.]")
  '(fill-column 80)
  '(indent-tabs-mode nil)
  '(package-selected-packages
    (quote
-    (opencl-mode cmake-ide cmake-mode elpy auto-complete auto-complete-clang-async flycheck-cstyle flycheck projectile ggtags yasnippet yasnippet-snippets use-package magit))) ;; ox-asciidoc
+    (markdown-mode opencl-mode cmake-mode elpy auto-complete auto-complete-clang-async flycheck-cstyle flycheck projectile ggtags yasnippet yasnippet-snippets use-package magit)))
  '(projectile-git-command "git ls-files -zc --exclude-standard  --recurse-submodules")
  '(require-final-newline (quote ask))
  '(tab-width 2))
