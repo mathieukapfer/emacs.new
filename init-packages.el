@@ -12,11 +12,19 @@
 ;;(add-to-list 'package-archives
 ;;             '("MELPA Stable" . "https://stable.melpa.org/packages/") t)
 
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+;;(add-to-list 'package-archives
+;;             '("melpa" . "http://melpa.org/packages/") t)
 
 ;;(add-to-list 'package-archives
 ;;             '("gnu" . "http://elpa.gnu.org/packages/") t)
+
+
+(setq package-archives '(
+                         ("melpa-stable" . "http://stable.melpa.org/packages/")
+                         ("melpa" . "http://melpa.org/packages/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")
+                         )
+      )
 
 
 (package-initialize)
