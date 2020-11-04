@@ -25,10 +25,11 @@
 ;;   - c, c++, java: ggtags => need "sudo apt-get install global"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ggtags
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-              (ggtags-mode 1))))
+
+;(add-hook 'c-mode-common-hook
+;          (lambda ()
+;            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+;              (ggtags-mode 1))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
