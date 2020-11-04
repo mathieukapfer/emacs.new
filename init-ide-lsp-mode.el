@@ -2,6 +2,7 @@
 
 ;;; Code:
 
+
 ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
 (setq lsp-keymap-prefix "C-l")
 
@@ -11,4 +12,17 @@
             (c++-mode . lsp-deferred)
             ;; if you want which-key integration
             (lsp-mode . lsp-enable-which-key-integration))
-    :commands lsp-deferred)
+    :commands lsp-deferred
+    :custom (lsp-clients-clangd-executable
+             ;; from https://github.com/clangd/clangd/releases/tag/11.0.0
+             "/home/kapfer/.emacs.d/lsp-server/clangd_11.0.0/bin/clangd")
+    )
+
+
+;; optional if you want which-key integration
+(use-package which-key
+    :config
+    (which-key-mode))
+
+
+;;; end
