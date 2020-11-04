@@ -1,3 +1,6 @@
 [submodule "elpa"]
 	path = elpa
 	url = git@github.com:mathieukapfer/emacs.elpa.git
+[submodule "lsp-server"]
+	path = lsp-server
+	url = git@github.com:mathieukapfer/emacs.lsp-server.git
