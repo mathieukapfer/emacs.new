@@ -15,7 +15,7 @@
     :commands lsp-deferred
     :custom (lsp-clients-clangd-executable
              ;; from https://github.com/clangd/clangd/releases/tag/11.0.0
-             "/home/kapfer/.emacs.d/lsp-server/clangd_11.0.0/bin/clangd")
+             "~/.emacs.d/lsp-server/clangd_11.0.0/bin/clangd")
     )
 
 

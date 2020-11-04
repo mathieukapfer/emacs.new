@@ -37,3 +37,11 @@
 ;; only c-mode:
 ;;(add-hook 'c-mode-hook
 ;;        (lambda () (add-to-list 'write-file-functions 'delete-trailing-whitespace)))
+
+
+
+;; external format tools
+;; ==========================
+;; clang-format
+(load-file "~/.emacs.d/clang-format.el")
+(global-set-key [C-M-tab] 'clang-format-region)

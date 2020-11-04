@@ -59,10 +59,3 @@
 ;; setup for development
 (load-file "~/.emacs.d/init-ide.el")
 (put 'erase-buffer 'disabled nil)
-
-;; clang-format
-(load-file "~/.emacs.d/clang-format.el")
-(global-set-key [C-M-tab] 'clang-format-region)
-
-;; colorize ansi-color in compile buffer
-(load-file "~/.emacs.d/init-ansicolor-in-compile-buffer.el")
