@@ -27,9 +27,11 @@
 (global-set-key [f11] 'shell)
 (global-set-key (kbd "<f9>") 'my-grep)
 
+;; windows short cut
+(global-set-key (kbd "C-z") 'undo)
+
 (defun dired-sources-file ()
   (interactive)
   (dired default-directory)
   ;;(replace-in-string (buffer-file-name) "/[^/]+$" "/."))
 )
-
