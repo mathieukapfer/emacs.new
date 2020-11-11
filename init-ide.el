@@ -25,10 +25,11 @@
 ;;   - c, c++, java: ggtags => need "sudo apt-get install global"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ggtags
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-              (ggtags-mode 1))))
+
+;(add-hook 'c-mode-common-hook
+;          (lambda ()
+;            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+;              (ggtags-mode 1))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -58,7 +59,6 @@
 ;(ac-config-default)
 
 ;; auto-complete
-;;(load-file "~/.emacs.d/init-ide-ac-clang.el")
 (load-file "~/.emacs.d/init-ide-ac-snippet.el")
 
 ;; lsp mode
@@ -67,6 +67,12 @@
 ;; start yasnippet with emacs
 (require 'yasnippet)
 (yas-global-mode 1)
+
+;; auto complete with yasnippet
+(load-file "~/.emacs.d/init-ide-ac-snippet.el")
+
+;; lsp-mode
+(load-file "~/.emacs.d/init-ide-lsp-mode.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; opencl

@@ -1,9 +1,6 @@
-;;(require 'auto-complete-clang-async)
-
 (defun ac-cc-mode-setup ()
-  ;;(setq ac-sources '(ac-source-clang-async))
-  ;;(setq ac-sources (append '(ac-source-clang-async) ac-sources))
-  (setq ac-sources '(ac-source-yasnippet))
+  (setq ac-sources (append '(ac-source-yasnippet) ac-sources))
+  ;; (setq ac-sources '(ac-source-yasnippet))
 )
 
 (defun my-ac-config ()

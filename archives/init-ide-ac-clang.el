@@ -23,6 +23,8 @@
 (setq cmake-ide-flags-c++ (append cmake-ide-flags-c++ (list "-D_X86_")))
 
 ;; https://github.com/Golevka/emacs-clang-complete-async
+;; This extension fades in emacs C/C++ mode and provides candidates automatically while you typing code, if you want to add parameters to clang (libclang, actually), such as -Ipath, just call ac-clang-set-cflags interactively or set the value of ac-clang-flags in .emacs or .dir-locals.el, maybe you need an explicit call to ac-clang-update-cmdlineargs to make changes to cflags take effect, which is a niggling part of it T T
+
 
 (require 'auto-complete-clang-async)
 
