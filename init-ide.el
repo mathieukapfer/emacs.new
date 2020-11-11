@@ -58,7 +58,11 @@
 ;(ac-config-default)
 
 ;; auto-complete
-(load-file "~/.emacs.d/init-ide-ac-clang.el")
+;;(load-file "~/.emacs.d/init-ide-ac-clang.el")
+(load-file "~/.emacs.d/init-ide-ac-snippet.el")
+
+;; lsp mode
+(load-file "~/.emacs.d/init-lsp.el")
 
 ;; start yasnippet with emacs
 (require 'yasnippet)
