@@ -12,3 +12,6 @@
   (ansi-color-apply-on-region compilation-filter-start (point))
   (toggle-read-only))
 (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
+
+;; get line number everywhere
+(global-linum-mode)
