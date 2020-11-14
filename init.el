@@ -11,6 +11,8 @@
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 2)
  '(clang-format-style "file")
+ '(company-idle-delay 0.1)
+ '(company-minimum-prefix-length 1)
  '(dired-listing-switches "-alh")
  '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.[^.]")
  '(fill-column 80)
