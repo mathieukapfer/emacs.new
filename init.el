@@ -65,3 +65,7 @@
 ;; setup for development
 (load-file "~/.emacs.d/init-spell.el")
 (put 'erase-buffer 'disabled nil)
+
+;; graphviz mode
+(load-file "~/.emacs.d/graphviz-dot-mode.el")
+(add-to-list 'auto-mode-alist '("\\.dor\\'" . graphviz-dot-mode))
