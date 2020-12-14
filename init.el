@@ -68,4 +68,4 @@
 
 ;; graphviz mode
 (load-file "~/.emacs.d/graphviz-dot-mode.el")
-(add-to-list 'auto-mode-alist '("\\.dor\\'" . graphviz-dot-mode))
+(add-to-list 'auto-mode-alist '("\\.dot\\'" . graphviz-dot-mode))
