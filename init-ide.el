@@ -52,14 +52,11 @@
   :init (global-flycheck-mode))
 
 ;; start auto-complete with emacs
-(require 'auto-complete)
+;;(require 'auto-complete)
 
 ;; do default config for auto-complete
-(require 'auto-complete-config)
+;;(require 'auto-complete-config)
 ;(ac-config-default)
-
-;; auto-complete
-(load-file "~/.emacs.d/init-ide-ac-snippet.el")
 
 ;; lsp mode
 (load-file "~/.emacs.d/init-lsp.el")
@@ -69,7 +66,7 @@
 (yas-global-mode 1)
 
 ;; auto complete with yasnippet
-(load-file "~/.emacs.d/init-ide-ac-snippet.el")
+;;(load-file "~/.emacs.d/init-ide-ac-snippet.el")
 
 ;; lsp-mode
 (load-file "~/.emacs.d/init-ide-lsp-mode.el")

@@ -34,7 +34,7 @@
  '(indent-tabs-mode nil)
  '(package-selected-packages
    (quote
-    (flycheck-aspell which-key lsp-mode markdown-mode opencl-mode cmake-mode elpy auto-complete flycheck-cstyle flycheck ggtags projectile yasnippet yasnippet-snippets use-package magit)))
+    (auto-org-md flycheck-aspell which-key lsp-mode markdown-mode opencl-mode cmake-mode elpy auto-complete flycheck-cstyle flycheck ggtags projectile yasnippet yasnippet-snippets use-package magit)))
  '(projectile-git-command "git ls-files -zc --exclude-standard  --recurse-submodules")
  '(require-final-newline (quote ask))
  '(tab-width 2))
