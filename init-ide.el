@@ -59,7 +59,7 @@
 ;(ac-config-default)
 
 ;; lsp mode
-(load-file "~/.emacs.d/init-lsp.el")
+;;(load-file "~/.emacs.d/init-lsp.el")
 
 ;; start yasnippet with emacs
 (require 'yasnippet)

@@ -11,6 +11,14 @@
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 2)
  '(clang-format-style "file")
+ '(company-backends
+   (quote
+    (company-bbdb company-semantic company-cmake
+                  (company-capf company-yasnippet)
+                  (company-clang)
+                  company-files
+                  (company-dabbrev-code company-gtags company-etags company-keywords)
+                  company-oddmuse company-dabbrev company-abbrev)))
  '(company-idle-delay 0.1)
  '(company-minimum-prefix-length 1)
  '(dired-listing-switches "-alh")
