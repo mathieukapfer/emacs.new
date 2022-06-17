@@ -13,16 +13,21 @@
  '(clang-format-style "file")
  '(company-backends
    (quote
-    (company-bbdb company-semantic company-cmake
-                  (company-capf company-yasnippet)
-                  (company-clang)
-                  company-files
-                  (company-dabbrev-code company-gtags company-etags company-keywords)
-                  company-oddmuse company-dabbrev company-abbrev)))
+    ((company-capf company-yasnippet)
+     company-bbdb company-semantic company-cmake
+     (company-clang)
+     company-files
+     (company-dabbrev-code company-gtags company-etags company-keywords)
+     company-oddmuse company-dabbrev company-abbrev)))
  '(company-idle-delay 0.1)
  '(company-minimum-prefix-length 1)
+ '(custom-safe-themes
+   (quote
+    ("57e3f215bef8784157991c4957965aa31bac935aca011b29d7d8e113a652b693" "3d4df186126c347e002c8366d32016948068d2e9198c496093a96775cc3b3eaa" default)))
  '(dired-listing-switches "-alh")
  '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.[^.]")
+ '(elpy-rpc-python-command "python3")
+ '(elpy-rpc-virtualenv-path "/home/kapfer/testproject")
  '(fill-column 80)
  '(grep-files-aliases
    (quote
@@ -42,7 +47,7 @@
  '(indent-tabs-mode nil)
  '(package-selected-packages
    (quote
-    (auto-org-md flycheck-aspell which-key lsp-mode markdown-mode opencl-mode cmake-mode elpy auto-complete flycheck-cstyle flycheck ggtags projectile yasnippet yasnippet-snippets use-package magit)))
+    (matlab-mode autodisass-llvm-bitcode afternoon-theme abyss-theme dynamic-graphs dap-mode flycheck-aspell which-key lsp-mode markdown-mode opencl-mode cmake-mode elpy auto-complete flycheck-cstyle flycheck ggtags projectile yasnippet yasnippet-snippets use-package magit)))
  '(projectile-git-command "git ls-files -zc --exclude-standard  --recurse-submodules")
  '(require-final-newline (quote ask))
  '(tab-width 2))
