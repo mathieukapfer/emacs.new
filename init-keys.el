@@ -35,3 +35,7 @@
   (dired default-directory)
   ;;(replace-in-string (buffer-file-name) "/[^/]+$" "/."))
 )
+
+;; opencl lookup
+(eval-after-load 'Opencl
+  '(define-key opencl-mode-map (kbd "C-h f") 'opencl-lookup))

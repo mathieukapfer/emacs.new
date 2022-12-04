@@ -1,8 +1,15 @@
+;;; package --- Summary:
+
+;;; Commentary:
+
+;;; Code:
+
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+
+;;; (package-initialize)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -12,26 +19,23 @@
  '(c-basic-offset 2)
  '(clang-format-style "file")
  '(company-backends
-   (quote
-    ((company-capf company-yasnippet)
+   '((company-capf company-yasnippet)
      company-bbdb company-semantic company-cmake
      (company-clang)
      company-files
      (company-dabbrev-code company-gtags company-etags company-keywords)
-     company-oddmuse company-dabbrev company-abbrev)))
+     company-oddmuse company-dabbrev company-abbrev))
  '(company-idle-delay 0.1)
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes
-   (quote
-    ("57e3f215bef8784157991c4957965aa31bac935aca011b29d7d8e113a652b693" "3d4df186126c347e002c8366d32016948068d2e9198c496093a96775cc3b3eaa" default)))
+   '("57e3f215bef8784157991c4957965aa31bac935aca011b29d7d8e113a652b693" "3d4df186126c347e002c8366d32016948068d2e9198c496093a96775cc3b3eaa" default))
  '(dired-listing-switches "-alh")
  '(dired-omit-files "^\\.?#\\|^\\.$\\|^\\.[^.]")
  '(elpy-rpc-python-command "python3")
  '(elpy-rpc-virtualenv-path "/home/kapfer/testproject")
  '(fill-column 80)
  '(grep-files-aliases
-   (quote
-    (("all" . "* .[!.]* ..?*")
+   '(("all" . "* .[!.]* ..?*")
      ("el" . "*.el")
      ("ch" . "*.[ch] *.hpp *.cpp *.cl")
      ("c" . "*.c *.h *.hpp *.cpp *.cl")
@@ -43,13 +47,13 @@
      ("m" . "[Mm]akefile*")
      ("tex" . "*.tex")
      ("texi" . "*.texi")
-     ("asm" . "*.[sS]"))))
+     ("asm" . "*.[sS]")))
  '(indent-tabs-mode nil)
+ '(lsp-pyls-server-command '("pylsp"))
  '(package-selected-packages
-   (quote
-    (matlab-mode autodisass-llvm-bitcode afternoon-theme abyss-theme dynamic-graphs dap-mode flycheck-aspell which-key lsp-mode markdown-mode opencl-mode cmake-mode elpy auto-complete flycheck-cstyle flycheck ggtags projectile yasnippet yasnippet-snippets use-package magit)))
+   '(lsp-ui ac-octave matlab-mode autodisass-llvm-bitcode afternoon-theme abyss-theme dynamic-graphs dap-mode flycheck-aspell which-key lsp-mode markdown-mode opencl-mode cmake-mode elpy auto-complete flycheck-cstyle flycheck ggtags projectile yasnippet yasnippet-snippets use-package magit))
  '(projectile-git-command "git ls-files -zc --exclude-standard  --recurse-submodules")
- '(require-final-newline (quote ask))
+ '(require-final-newline 'ask)
  '(tab-width 2))
 
 (custom-set-faces
@@ -70,6 +74,10 @@
 
 ;; emacs customisation
 (load-file "~/.emacs.d/init-customize.el")
+
+;; look and field
+(load-theme 'wombat)
+(tool-bar-mode -1)
 
 ;; setup for development
 (load-file "~/.emacs.d/init-ide.el")
